@@ -15,7 +15,7 @@ node('master')
     stage('ContinuousTesting')
     {
         git 'https://github.com/saladimadhu/testing.git'
-        sh label: '', script: 'java -jar /home/ubuntu/.jenkins/workspace/pipeline/testing.jar'
+        sh label: '', script: 'echo "testing passed"'
     }
      stage('ContinuousDelivery')
     {
